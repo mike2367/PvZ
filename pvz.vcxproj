@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{A0EE61C7-A3F6-4E27-8C48-505E9BFF9395}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="out\build\x64-debug\cmakefiles\3.26.0-msvc3\compileridcxx\CMakeCXXCompilerId.cpp" />
+    <ClCompile Include="out\build\x64-debug\cmakefiles\3.26.0-msvc3\compileridc\CMakeCCompilerId.c" />
+    <ClCompile Include="out\build\x64-debug\cmakefiles\showincludes\main.c" />
+    <ClCompile Include="pvz\src\framework\GameManager.cpp" />
+    <ClCompile Include="pvz\src\framework\ObjectBase.cpp" />
+    <ClCompile Include="pvz\src\framework\SpriteManager.cpp" />
+    <ClCompile Include="pvz\src\framework\WorldBase.cpp" />
+    <ClCompile Include="pvz\src\gameobject\GameObject.cpp" />
+    <ClCompile Include="pvz\src\gameworld\GameWorld.cpp" />
+    <ClCompile Include="pvz\src\main.cpp" />
+    <ClCompile Include="src\framework\GameManager.cpp" />
+    <ClCompile Include="src\framework\ObjectBase.cpp" />
+    <ClCompile Include="src\framework\SpriteManager.cpp" />
+    <ClCompile Include="src\framework\WorldBase.cpp" />
+    <ClCompile Include="src\gameobject\GameObject.cpp" />
+    <ClCompile Include="src\gameworld\GameWorld.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="third_party\freeglut\src\android\fg_cursor_android.c" />
+    <ClCompile Include="third_party\freeglut\src\android\fg_ext_android.c" />
+    <ClCompile Include="third_party\freeglut\src\android\fg_gamemode_android.c" />
+    <ClCompile Include="third_party\freeglut\src\android\fg_init_android.c" />
+    <ClCompile Include="third_party\freeglut\src\android\fg_input_devices_android.c" />
+    <ClCompile Include="third_party\freeglut\src\android\fg_joystick_android.c" />
+    <ClCompile Include="third_party\freeglut\src\android\fg_main_android.c" />
+    <ClCompile Include="third_party\freeglut\src\android\fg_runtime_android.c" />
+    <ClCompile Include="third_party\freeglut\src\android\fg_spaceball_android.c" />
+    <ClCompile Include="third_party\freeglut\src\android\fg_state_android.c" />
+    <ClCompile Include="third_party\freeglut\src\android\fg_structure_android.c" />
+    <ClCompile Include="third_party\freeglut\src\android\fg_window_android.c" />
+    <ClCompile Include="third_party\freeglut\src\android\native_app_glue\android_native_app_glue.c" />
+    <ClCompile Include="third_party\freeglut\src\blackberry\fg_init_blackberry.c" />
+    <ClCompile Include="third_party\freeglut\src\blackberry\fg_main_blackberry.c" />
+    <ClCompile Include="third_party\freeglut\src\blackberry\fg_state_blackberry.c" />
+    <ClCompile Include="third_party\freeglut\src\blackberry\fg_structure_blackberry.c" />
+    <ClCompile Include="third_party\freeglut\src\blackberry\fg_window_blackberry.c" />
+    <ClCompile Include="third_party\freeglut\src\egl\fg_display_egl.c" />
+    <ClCompile Include="third_party\freeglut\src\egl\fg_ext_egl.c" />
+    <ClCompile Include="third_party\freeglut\src\egl\fg_init_egl.c" />
+    <ClCompile Include="third_party\freeglut\src\egl\fg_state_egl.c" />
+    <ClCompile Include="third_party\freeglut\src\egl\fg_structure_egl.c" />
+    <ClCompile Include="third_party\freeglut\src\egl\fg_window_egl.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_callbacks.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_cursor.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_display.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_ext.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_font.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_font_data.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_gamemode.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_geometry.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_gl2.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_init.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_input_devices.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_joystick.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_main.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_menu.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_misc.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_overlay.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_spaceball.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_state.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_stroke_mono_roman.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_stroke_roman.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_structure.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_teapot.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_videoresize.c" />
+    <ClCompile Include="third_party\freeglut\src\fg_window.c" />
+    <ClCompile Include="third_party\freeglut\src\gles_stubs.c" />
+    <ClCompile Include="third_party\freeglut\src\mswin\fg_cursor_mswin.c" />
+    <ClCompile Include="third_party\freeglut\src\mswin\fg_display_mswin.c" />
+    <ClCompile Include="third_party\freeglut\src\mswin\fg_ext_mswin.c" />
+    <ClCompile Include="third_party\freeglut\src\mswin\fg_gamemode_mswin.c" />
+    <ClCompile Include="third_party\freeglut\src\mswin\fg_init_mswin.c" />
+    <ClCompile Include="third_party\freeglut\src\mswin\fg_input_devices_mswin.c" />
+    <ClCompile Include="third_party\freeglut\src\mswin\fg_joystick_mswin.c" />
+    <ClCompile Include="third_party\freeglut\src\mswin\fg_main_mswin.c" />
+    <ClCompile Include="third_party\freeglut\src\mswin\fg_menu_mswin.c" />
+    <ClCompile Include="third_party\freeglut\src\mswin\fg_spaceball_mswin.c" />
+    <ClCompile Include="third_party\freeglut\src\mswin\fg_state_mswin.c" />
+    <ClCompile Include="third_party\freeglut\src\mswin\fg_structure_mswin.c" />
+    <ClCompile Include="third_party\freeglut\src\mswin\fg_window_mswin.c" />
+    <ClCompile Include="third_party\freeglut\src\util\xparsegeometry_repl.c" />
+    <ClCompile Include="third_party\freeglut\src\wayland\fg_cursor_wl.c" />
+    <ClCompile Include="third_party\freeglut\src\wayland\fg_ext_wl.c" />
+    <ClCompile Include="third_party\freeglut\src\wayland\fg_gamemode_wl.c" />
+    <ClCompile Include="third_party\freeglut\src\wayland\fg_init_wl.c" />
+    <ClCompile Include="third_party\freeglut\src\wayland\fg_input_devices_wl.c" />
+    <ClCompile Include="third_party\freeglut\src\wayland\fg_main_wl.c" />
+    <ClCompile Include="third_party\freeglut\src\wayland\fg_state_wl.c" />
+    <ClCompile Include="third_party\freeglut\src\wayland\fg_structure_wl.c" />
+    <ClCompile Include="third_party\freeglut\src\wayland\fg_window_wl.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_cursor_x11.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_display_x11_glx.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_ext_x11.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_gamemode_x11.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_glutfont_definitions_x11.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_init_x11.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_input_devices_x11.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_joystick_x11.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_main_x11.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_menu_x11.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_spaceball_x11.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_state_x11.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_state_x11_glx.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_structure_x11.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_window_x11.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_window_x11_glx.c" />
+    <ClCompile Include="third_party\freeglut\src\x11\fg_xinput_x11.c" />
+    <ClCompile Include="third_party\soil\src\image_dxt.c" />
+    <ClCompile Include="third_party\soil\src\image_helper.c" />
+    <ClCompile Include="third_party\soil\src\original\stb_image-1.09.c" />
+    <ClCompile Include="third_party\soil\src\original\stb_image-1.16.c" />
+    <ClCompile Include="third_party\soil\src\soil.c" />
+    <ClCompile Include="third_party\soil\src\stb_image_aug.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="out\build\x64-debug\cmakefiles\showincludes\foo.h" />
+    <ClInclude Include="out\build\x64-debug\config.h" />
+    <ClInclude Include="out\build\x64-debug\freeglut\src\fg_version.h" />
+    <ClInclude Include="pvz\src\framework\GameManager.hpp" />
+    <ClInclude Include="pvz\src\framework\ObjectBase.hpp" />
+    <ClInclude Include="pvz\src\framework\SpriteManager.hpp" />
+    <ClInclude Include="pvz\src\framework\WorldBase.hpp" />
+    <ClInclude Include="pvz\src\gameobject\GameObject.hpp" />
+    <ClInclude Include="pvz\src\gameworld\GameWorld.hpp" />
+    <ClInclude Include="pvz\src\utils.hpp" />
+    <ClInclude Include="src\framework\GameManager.hpp" />
+    <ClInclude Include="src\framework\ObjectBase.hpp" />
+    <ClInclude Include="src\framework\SpriteManager.hpp" />
+    <ClInclude Include="src\framework\WorldBase.hpp" />
+    <ClInclude Include="src\gameobject\GameObject.hpp" />
+    <ClInclude Include="src\gameworld\GameWorld.hpp" />
+    <ClInclude Include="src\utils.hpp" />
+    <ClInclude Include="third_party\freeglut\include\gl\freeglut.h" />
+    <ClInclude Include="third_party\freeglut\include\gl\freeglut_ext.h" />
+    <ClInclude Include="third_party\freeglut\include\gl\freeglut_std.h" />
+    <ClInclude Include="third_party\freeglut\include\gl\freeglut_ucall.h" />
+    <ClInclude Include="third_party\freeglut\include\gl\glut.h" />
+    <ClInclude Include="third_party\freeglut\src\android\fg_internal_android.h" />
+    <ClInclude Include="third_party\freeglut\src\android\fg_main_android.h" />
+    <ClInclude Include="third_party\freeglut\src\android\native_app_glue\android_native_app_glue.h" />
+    <ClInclude Include="third_party\freeglut\src\blackberry\fg_internal_blackberry.h" />
+    <ClInclude Include="third_party\freeglut\src\egl\fg_init_egl.h" />
+    <ClInclude Include="third_party\freeglut\src\egl\fg_internal_egl.h" />
+    <ClInclude Include="third_party\freeglut\src\egl\fg_state_egl.h" />
+    <ClInclude Include="third_party\freeglut\src\egl\fg_structure_egl.h" />
+    <ClInclude Include="third_party\freeglut\src\egl\fg_window_egl.h" />
+    <ClInclude Include="third_party\freeglut\src\fg_callback_macros.h" />
+    <ClInclude Include="third_party\freeglut\src\fg_gl2.h" />
+    <ClInclude Include="third_party\freeglut\src\fg_init.h" />
+    <ClInclude Include="third_party\freeglut\src\fg_internal.h" />
+    <ClInclude Include="third_party\freeglut\src\fg_teapot_data.h" />
+    <ClInclude Include="third_party\freeglut\src\fg_version.h" />
+    <ClInclude Include="third_party\freeglut\src\mswin\fg_internal_mswin.h" />
+    <ClInclude Include="third_party\freeglut\src\util\xparsegeometry_repl.h" />
+    <ClInclude Include="third_party\freeglut\src\wayland\fg_internal_wl.h" />
+    <ClInclude Include="third_party\freeglut\src\x11\fg_internal_x11.h" />
+    <ClInclude Include="third_party\freeglut\src\x11\fg_internal_x11_glx.h" />
+    <ClInclude Include="third_party\freeglut\src\x11\fg_state_x11_glx.h" />
+    <ClInclude Include="third_party\freeglut\src\x11\fg_window_x11_glx.h" />
+    <ClInclude Include="third_party\soil\include\soil\image_dxt.h" />
+    <ClInclude Include="third_party\soil\include\soil\image_helper.h" />
+    <ClInclude Include="third_party\soil\include\soil\SOIL.h" />
+    <ClInclude Include="third_party\soil\include\soil\stbi_dds_aug.h" />
+    <ClInclude Include="third_party\soil\include\soil\stbi_dds_aug_c.h" />
+    <ClInclude Include="third_party\soil\include\soil\stb_image_aug.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="out\build\x64-debug\cmakefiles\pvz.dir\manifest.rc" />
+    <ResourceCompile Include="out\build\x64-debug\freeglut.rc" />
+    <ResourceCompile Include="out\build\x64-debug\freeglut\cmakefiles\freeglut.dir\manifest.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="out\build\x64-debug\cmakefiles\3.26.0-msvc3\CMakeDetermineCompilerABI_C.bin" />
+    <None Include="out\build\x64-debug\cmakefiles\3.26.0-msvc3\CMakeDetermineCompilerABI_CXX.bin" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
