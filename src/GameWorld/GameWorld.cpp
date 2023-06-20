@@ -39,6 +39,7 @@ bool GameWorld::ishit(std::list<std::shared_ptr<GameObject>>::iterator gm1, std:
     }
     return false;
 }
+//check hits
 void GameWorld::check_hit_and_upgrade()
 {
     for (auto it = game.begin(); it != game.end(); it++)
